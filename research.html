@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research</title>
+  <style>
+    :root {
+      --main-bg: #ffffff;
+      --main-text: #1c1c1c;
+      --accent: #006644;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      background-color: var(--main-bg);
+      color: var(--main-text);
+      margin: 0;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    nav {
+      width: 220px;
+      background-color: var(--accent);
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      height: 100vh;
+      top: 0;
+      left: 0;
+    }
+
+    nav h1 {
+      color: white;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    nav img {
+      width: 160px;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+    }
+
+    nav .contact-info {
+      margin-bottom: 1rem;
+    }
+
+    nav .contact-info p,
+    nav .contact-info a {
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.5rem 0;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      margin-left: 240px;
+      padding: 2rem;
+      max-width: 800px;
+      flex: 1;
+    }
+
+    h2 {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.25rem;
+    }
+
+    h3 {
+      color: var(--accent);
+    }
+
+    .email-obfuscated {
+      unicode-bidi: bidi-override;
+      direction: rtl;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Gregory Gillis</h1>
+    <img src="Greg.jpg" alt="Gregory Gillis Headshot">
+    <div class="contact-info">
+      <p>Email: <span class="email-obfuscated">ude.iiawah@spillig</span></p>
+      <p><a href="https://www.linkedin.com/in/gregory-gillis-07787a162?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></p>
+      <p><a href="https://shidler.hawaii.edu/fin/directory/gregory-gillis" target="_blank">UH Directory</a></p>
+    </div>
+    <a href="index.html">Profile</a>
+    <a href="cv.html">Curriculum Vitae</a>
+    <a href="research.html">Research</a>
+  </nav>
+
+  <main>
+    <h2>Research</h2>
+
+    <h3>Working Papers</h3>
+    <ul>
+      <li><strong>Predictability of Firm-Level Stock Crash Risk</strong></li>
+    </ul>
+
+    <h3>Work in Progress</h3>
+    <ul>
+      <li><strong>Paradise Premiums:</strong> Buyer Origin and Home Prices in Hawaii</li>
+    </ul>
+  </main>
+</body>
+</html>
