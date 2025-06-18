@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,48 +16,31 @@
       background-color: var(--main-bg);
       color: var(--main-text);
       margin: 0;
+    }
+
+    header {
+      background-color: var(--accent);
+      color: white;
+      padding: 1rem;
       display: flex;
-      min-height: 100vh;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
     }
 
     nav {
-      width: 220px;
-      background-color: var(--accent);
-      padding: 2rem 1rem;
       display: flex;
-      flex-direction: column;
-      position: fixed;
-      height: 100vh;
-      top: 0;
-      left: 0;
-    }
-
-    nav h1 {
-      color: white;
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-    }
-
-    nav img {
-      width: 160px;
-      border-radius: 8px;
-      margin-bottom: 0.75rem;
-    }
-
-    nav .contact-info {
-      margin-bottom: 1rem;
-    }
-
-    nav .contact-info p,
-    nav .contact-info a {
-      color: white;
-      font-size: 0.9rem;
+      gap: 1rem;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0.5rem 0;
       font-weight: bold;
     }
 
@@ -66,11 +48,32 @@
       text-decoration: underline;
     }
 
+    .sidebar {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .sidebar img {
+      width: 120px;
+      border-radius: 8px;
+    }
+
+    .contact-info {
+      font-size: 0.9rem;
+    }
+
+    .contact-info p,
+    .contact-info a {
+      margin: 0.25rem 0;
+    }
+
     main {
-      margin-left: 240px;
-      padding: 2rem;
       max-width: 800px;
-      flex: 1;
+      margin: auto;
+      padding: 2rem;
     }
 
     h2 {
@@ -83,6 +86,12 @@
       color: var(--accent);
     }
 
+    .abstract {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #444;
+    }
+
     .email-obfuscated {
       unicode-bidi: bidi-override;
       direction: rtl;
@@ -90,8 +99,16 @@
   </style>
 </head>
 <body>
-  <nav>
+  <header>
     <h1>Gregory Gillis</h1>
+    <nav>
+      <a href="index.html">Profile</a>
+      <a href="cv.html">Curriculum Vitae</a>
+      <a href="research.html">Research</a>
+    </nav>
+  </header>
+
+  <div class="sidebar">
     <img src="Greg.jpg" alt="Gregory Gillis Headshot">
     <div class="contact-info">
       <p>Email (Personal): <span class="email-obfuscated">moc.liamg@12sillig</span></p>
@@ -99,10 +116,7 @@
       <p><a href="https://www.linkedin.com/in/gregory-gillis-07787a162?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></p>
       <p><a href="https://shidler.hawaii.edu/fin/directory/gregory-gillis" target="_blank">UH Directory</a></p>
     </div>
-    <a href="index.html">Profile</a>
-    <a href="cv.html">Curriculum Vitae</a>
-    <a href="research.html">Research</a>
-  </nav>
+  </div>
 
   <main>
     <h2>Research</h2>
